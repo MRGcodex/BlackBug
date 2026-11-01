@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "blackbug"
+version = "2.3.0"
+description = "Automated bug finding & exploitation framework — MRGcodex"
+authors = [{ name = "MRGcodex" }]
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT with Ethical Use Clause" }
+dependencies = [
+    "requests>=2.31.0",
+    "colorama>=0.4.6",
+    "pyExploitDb>=0.0.9",
+]
+
+[project.urls]
+Homepage = "https://github.com/MRGcodex/BlackBug"
+
+[tool.setuptools]
+py-modules = ["blackbug"]
+packages = ["modules"]
