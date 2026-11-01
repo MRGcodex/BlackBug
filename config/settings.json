@@ -1,0 +1,21 @@
+{
+  "brand": "MRGcodex",
+  "tool_name": "BlackBug",
+  "version": "2.3.0",
+  "cve_intel": {
+    "sources": ["nvd", "cisa_kev", "epss", "github_advisory", "circl"],
+    "kev_ttl_hours": 24
+  },
+  "scan": {
+    "nmap_top_ports": 1000,
+    "nuclei_severity": "critical,high,medium",
+    "nuclei_timeout": 600,
+    "sqlmap_level": 1,
+    "sqlmap_risk": 1,
+    "sqlmap_timeout": 300
+  },
+  "output": {
+    "reports_dir": "reports",
+    "sqlmap_dir": "reports/sqlmap"
+  }
+}
